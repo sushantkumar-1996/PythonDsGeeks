@@ -44,5 +44,35 @@ for i in range(0, 4):  # Accessing 0, 1,2,3 elements
 a.insert(2, 4)  # At index 2 insert 4
 for i in a:
     print(i)  # Printing array after insertion.
+# Same method for floating values also just instead of i as type code we will have to write f or d
+
+"""Accessing Elements from an array--array items refer to the index number , use the index[] operator to access an item in the array
+Index must be an integer. Program showing how to access an element in the array---"""
+
+# import array as arr
+ar = arr.array('i', [12, 14, 16, 17, 20])
+print("First element is", a[0])
+print("Second element is", a[1])
+print("Third element is", a[2])
+print("Fourth element is", a[3])
+
+"""Removing Elements from an array---using built in remove() function but an error arises if element doesnt exist, it removes only
+ one element at a time, to remove a range of elements iterator is used. pop() function can also be used to remove and return the 
+ element from an array but as default it removes only last element to remove at specific position index is passed as argument to pop mehod
+ remove method in list will only remove the first occurence of the searched element, Program example"""
+
+# import array as arr
+a1 = arr.array('i', [12, 15, 16, 17, 20, 20])
+for i in range(0, 6):
+    print(a1[i])  # Printing all elements of the array
+
+print("Popped Element is:", a1.pop(3))  # pop deletes and returns the removed element
+for i in a1:
+    print(a1[i])  # printing after popping
+
+a1.remove(20)
+for i in a1:
+    print(a1[i])  # Printing after removing first occurence of 20
+
 
 
