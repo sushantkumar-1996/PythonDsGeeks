@@ -67,12 +67,33 @@ for i in range(0, 6):
     print(a1[i])  # Printing all elements of the array
 
 print("Popped Element is:", a1.pop(3))  # pop deletes and returns the removed element
-for i in a1:
+for i in range(0, 5):
     print(a1[i])  # printing after popping
 
 a1.remove(20)
-for i in a1:
+for i in range(0, 4):
     print(a1[i])  # Printing after removing first occurence of 20
+
+
+""" index() this function returns the index of first occurence of value mentioned in the arguments 
+    reverse() this function reverses the array
+"""
+
+# import array as arr
+a2 = arr.array('i', [10, 11, 12, 14, 15])
+for i in range(0, 5):
+    print("Printing a2", a2[i])
+
+print("Checking index function", a2.index(12))
+print(a2.index(15))
+a2.reverse()
+print("Checking reverse function")
+for i in range(0, 5):
+    print(a2[i])
+
+
+
+
 
 
 
